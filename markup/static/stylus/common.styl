@@ -1,0 +1,56 @@
+// Common styles of the project
+
+html, body
+	height 100%
+
+
+.page
+	min-width 960px
+	background-color #ffffff
+	letter-spacing tracking(10)
+
+.page__wrapper
+	margin-bottom -146px
+	min-height 100%
+	font-family $fLight
+	font-size 14px
+	font-weight normal
+	color #000
+
+
+* html .page__wrapper
+	height 100%
+
+*
+	margin 0
+	padding 0
+	font inherit
+	box-sizing border-box
+
+.page__buffer
+	height 146px
+
+.in
+	margin auto
+	padding-right 10px
+	padding-left 10px
+	width 960px
+
+
+.main
+	padding-top 32px
+
+
+.page__section
+	cf()
+	&_first
+		margin-bottom 46px
+		padding 22px 0
+		background-color #fffdeb
+	&_second
+		padding-bottom 52px
+		background-image linear-gradient(to top, #f0f0f0 0%, #ffffff 100%)
+
+
+.page__in
+	@extends .in

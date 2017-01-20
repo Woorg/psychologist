@@ -1,0 +1,62 @@
+mixin news(data)
+	.articles
+		h2.articles__title статьи
+
+		ul.articles__list
+				li.articles__item
+					.articles__i-image
+						img(src="__static__/img/content/article-thumb-1.jpg", alt="news thumb")
+					h3.articles__i-title Два коварных мифа о психотерапии
+					p.articles__i-text Миф первый. Поход к психотерапевту похож на поход, например, к хирургу. Важно донести то что болит до врача, а дальше он все сам сделает и решит — выпишет пилюли в...
+					.articles__link-w
+						a.articles__link(href="#link") Читать дальше...
+				li.articles__item
+					.articles__i-image
+						img(src="__static__/img/content/article-thumb-2.jpg", alt="news thumb")
+					h3.articles__i-title Как поддержать в горе или кризисе другого человека?
+					p.articles__i-text «Самое страшное для человека при нанесении судьбой ударов, не сами удары, а то, что человек в такой ситуации остается совершенно один» (с). Эту фразу я услышала от своего друга,
+					.articles__link-w
+						a.articles__link(href="#link") Читать дальше...
+				li.articles__item
+					.articles__i-image
+						img(src="__static__/img/content/article-thumb-3.jpg", alt="news thumb")
+					h3.articles__i-title О сексуальности и внутреннем дураке
+					p.articles__i-text Сексуальность — дочь спонтанности. А спонтанность не терпит безвыборного долга. Как только «супружеский долг» становится долгом, то сексуальность ретируется и может...
+					.articles__link-w
+						a.articles__link(href="#link") Читать дальше...
+
+mixin news-second(data)
+	.articles.articles_news
+		h2.articles__title новости
+
+		ul.articles__list
+				li.articles__item
+					a.articles__i-title(href="#link") Отпуск
+					.articles__i-date 29.12.2016
+					p.articles__i-text Друзья, с 29го декабря по 8 января 2017 я в отпуске. На все рабочие вопросы смогу откликнуться не раньше 6го января. По этому поводу желаю вам приятных выходных и счастливого...
+				li.articles__item
+					a.articles__i-title(href="#link") Свободные приемные часы
+					.articles__i-date 13.10.2016
+					p.articles__i-text Друзья, так как я часто слышу вопросы про свободные часы в графике, я решила отметить их все в он-лайн календаре. В нем указаны все-все мои свободные часы, с пометками о...
+				li.articles__item
+					a.articles__i-title(href="#link") Запись на консультирование
+					.articles__i-date 22.02.2016
+					p.articles__i-text Спешу сообщить, что в настоящий момент все вечерние часы заняты. Если вы хотите попасть на консультацию в вечернее время, пожалуйста, напишите о своем желании мне на е-мэил alyaeva@bk.ru и как...
+
+
+mixin news-third(data)
+	.articles.articles_questions
+		h2.articles__title вопросы и ответы
+
+		ul.articles__list
+			li.articles__item
+				a.articles__i-title Я тургеневская наивная дура и опять попала в зависимость?
+				p.articles__i-text «Добрый вечер. Надеюсь, что смогу здраво изложить суть того, что меня беспокоит. Есть я и есть мужчина. Мы ровесники мне 25 ему 27, знали друг друга, когда были подростками, но...
+				.articles__link-w
+					a.articles__link(href="#link") Читать дальше...
+			li.articles__item
+				a.articles__i-title Эмоция противопоставляет себя голосу разума, как будто разные голоса в голове. Какой голос слушать?
+				p.articles__i-text Просветите! Хочу спросить про эмоции, про внутренние ощущения и переживания. Я так сейчас про них думаю: что это что–то вроде регуляторов поведения. Кто их регулирует? Природная состовляющая. Если по...
+				.articles__link-w
+					a.articles__link(href="#link") Читать дальше...
+

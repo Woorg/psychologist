@@ -1,0 +1,81 @@
+.slider
+	background #FFF
+	&__in
+		@extends .in
+		margin-bottom 30px
+	&__list
+		margin 0
+		padding 0
+		position relative
+		list-style none
+	&__link
+		position relative
+		display block
+	&__caption
+		position absolute
+		bottom 0
+		left 0
+		right 0
+		padding 12px 11px 14px
+		background rgba(0,0,2, .3)
+		font-family $fLight
+		font-size 48px
+		font-weight 300
+		color #FFF
+
+	&__caption-text
+		margin 0
+		line-height 1
+		letter-spacing tracking(10)
+	.owl-nav
+		position absolute
+		top 50%
+		left 0
+		right 0
+		margin-top -76px
+	.owl-prev,
+	.owl-next
+		position absolute
+		width 46px
+		height 120px
+		background-color rgba(0,0,0, .4)
+		text-indent -9999px
+		opacity 1
+		transition opacity .3s ease
+		&:hover
+			opacity .8
+		&:after
+			position absolute
+			top 50%
+			left 50%
+			margin-top -31px
+			margin-left -11px
+	.owl-prev
+		left 0
+		&:after
+			content ""
+			bg($back-arrow)
+	.owl-next
+		right 0
+		&:after
+			content ""
+			position absolute
+			bg($next-arrow)
+
+	.owl-dots
+		padding-top 10px
+		font-size 0
+		text-align center
+	.owl-dot
+		margin-left 18px
+		display inline-block
+		vertical-align top
+		width 22px
+		height 22px
+		box-shadow 1px 2px 1px rgba(0, 0, 0, 0.2)
+		background-color #ffffff
+		border-radius 50%
+		&:first-child
+			margin-left 0
+		&.active
+			box-shadow inset 2px 3px 7px rgba(0, 0, 0, 0.35)
